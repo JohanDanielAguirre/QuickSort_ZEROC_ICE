@@ -35,6 +35,7 @@ public class SubServerI implements QuickSort.SubServerUnion {
     }
     @Override
     public void sort(int[] data, Current current) {
+        System.out.println("SubServer: Iniciando el ordenamiento QuickSort.");
         quickSort(data, 0, data.length - 1);
         //Arrays.parallelSort(data);
         UnionResult result = new UnionResult(data);

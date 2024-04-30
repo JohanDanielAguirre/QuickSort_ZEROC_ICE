@@ -21,7 +21,7 @@ To run the project you need to follow the next steps:
    $ slice2java QuickSort.ice
    ```
    ```bash
-   $ /.gradlew build
+   $ .\gradlew build
    ```
 
    ```bash

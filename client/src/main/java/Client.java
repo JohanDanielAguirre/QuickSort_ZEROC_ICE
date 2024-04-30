@@ -65,12 +65,12 @@ public class Client implements ReturnCallBack {
         System.out.println("""
                  \s
                  | Menu\s
-                 1. Generate a random List.\s
-                 2. Load data to sort.\s
-                 0. Exit.\s
+                 1. Generar una lista aleatoria.\s
+                 2. Cargar lista a ordenar.\s
+                 0. Salir.\s
                 \s""");
 
-        System.out.print("Select an option: ");
+        System.out.print("Seleccionar una opción: ");
         int selection = sc.nextInt();
         sc.nextLine();
         return menuSelection(client, selection);
@@ -89,15 +89,15 @@ public class Client implements ReturnCallBack {
                     list = generateList();
                     break;
                 case 2:
-                    System.out.print("Enter the file name: ");
+                    System.out.print("Ingrese el nombre del archivo: ");
                     String fileName = sc.nextLine();
                     list = loadFile(fileName);
                     break;
                 case 0:
-                    System.out.println("Exiting...");
+                    System.out.println("Saliendo...");
                     break;
                 default:
-                    System.out.println("Invalid option, please try again.");
+                    System.out.println("Opción incorrecta, por favor intente otra vez.");
                     exit = false;
                     break;
             }
@@ -107,7 +107,7 @@ public class Client implements ReturnCallBack {
 
     public static int[] generateList() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the size of the list: ");
+        System.out.print("Ingrese el tamaño de la lista: ");
         int value = sc.nextInt();
         sc.nextLine();
         int[] data = new int[value];
