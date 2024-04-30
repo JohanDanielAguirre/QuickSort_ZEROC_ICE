@@ -10,8 +10,7 @@ public class SubServer {
 
             // Create an adapter an initialize the worker
             ObjectAdapter adapter = communicator.createObjectAdapterWithEndpoints("MergeSubServer", "default -p 0");
-            SubServerI worker = new SubServerI();
-            adapter.add(worker, Util.stringToIdentity("subServer"));
+            adapter.add(new SubServerI(), Util.stringToIdentity("subServer"));
             adapter.activate();
 
             // Register the worker with the coordinator

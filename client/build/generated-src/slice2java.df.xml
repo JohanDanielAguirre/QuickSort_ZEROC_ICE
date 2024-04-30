@@ -1,18 +1,7 @@
 <state>
-  <timestamp value='1714477352000' />
+  <timestamp value='1714479762339' />
   <sourceSet name='default'>
-    <source name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\QuickSort.ice'>
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\UnionResult.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\SubServerUnion.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\ReturnCallBack.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\SortCoordinator.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\SubServerUnionPrx.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\_SubServerUnionPrxI.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\ReturnCallBackPrx.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\_ReturnCallBackPrxI.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\SortCoordinatorPrx.java' />
-      <file name='C:\Users\firer\OneDrive\Escritorio\UNIVERSIDAD\ICESI\quinto semestre\compunet\QuickSort_ZEROC_ICE\client\build\generated-src\QuickSort\_SortCoordinatorPrxI.java' />
-    </source>
+    <source name='C:\Users\13mig\OneDrive\Documentos\QuintoSemestre\Computación en internet\QuickSort_ZEROC_ICE\QuickSort.ice' />
     <arg value='C:\Program Files\ZeroC\Ice-3.7.10\\bin\slice2java.exe' />
     <arg value='-IC:\Program Files\ZeroC\Ice-3.7.10\\slice' />
   </sourceSet>
