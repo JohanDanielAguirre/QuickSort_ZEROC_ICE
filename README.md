@@ -1,21 +1,19 @@
 # QuickSort ICE
 
-## About
+## Acerca de
 
-This project consists in implementing a distributed sorting algorithm using asynchronous calls in the context of ICE (Internet Communications Engine). The main features include:
+Este proyecto consiste en implementar un algoritmo de ordenamiento distribuido utilizando llamadas asíncronas en el contexto de ICE (Internet Communications Engine). Las principales características incluyen:
 
-- Organize a randomly generated list of size **n**.
-- Organize a list Given a .txt file
+- Organizar una lista generada aleatoriamente de tamaño **n**.
+- Organizar una lista dada a partir de un archivo .txt
 
-## Getting Started
+## Cómo empezar
 
-To run the project you need to follow the next steps:
+Para ejecutar el proyecto, debes seguir los siguientes pasos:
 
-1. Clone the repository.
-2. Open the terminal in the project folder.
-3. Start the main server running the following command:
-
-
+1. Clona el repositorio.
+2. Abre la terminal en la carpeta del proyecto.
+3. Inicia el servidor principal ejecutando el siguiente comando:
 
    ```bash
    $ slice2java QuickSort.ice
@@ -27,22 +25,22 @@ To run the project you need to follow the next steps:
    ```bash
    $ java -jar .\MotherServer\build\libs\MotherServer.jar
    ```
-4. In a new terminal start the worker server running the following command
+4. En una nueva terminal, inicia el servidor trabajador ejecutando el siguiente comando:
 
    ```bash
    $ java -jar .\SubServer\build\libs\SubServer.jar
-   // you can execute many workers as you want
+   // puedes ejecutar tantos trabajadores como quieras
    ```
-5. In a new terminal start the client running the following command:
+5. En una nueva terminal, inicia el cliente ejecutando el siguiente comando:
 
    ```bash
    $ java -jar .\client\build\libs\client.jar 
    ```
-6. Follow the instructions on the client console.
+6. Sigue las instrucciones en la consola del cliente.
 
-## Contributors
+## Contribuidores
 
 - Johan Daniel Aguirre Arias
 - Alejandro Amu Garcia
 - Miguel Angel Gonzalez Arango
--  Rafaela Sofia Ruiz Pizarro
+- Rafaela Sofia Ruiz Pizarro
