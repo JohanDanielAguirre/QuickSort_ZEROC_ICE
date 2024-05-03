@@ -3,7 +3,7 @@
 ## Acerca de
 Este proyecto consiste en implementar un algoritmo de ordenamiento distribuido utilizando llamadas asíncronas en el contexto de ICE (Internet Communications Engine). Las principales características incluyen:
 
-- Organizar una lista generada aleatoriamente de tamaño **n**.
+- Organizar una lista generada aleatoriamente de tamaño *n*.
 - Organizar una lista dada a partir de un archivo .txt
 
 ## Introducción
@@ -16,11 +16,14 @@ Este proceso estará guiado entre un Servidor y un Cliente. Así, el cliente ini
 El algoritmo QuickSort tiene una complejidad algorítmica promedio de O(nlogn), donde n es el número de elementos en la lista. Esto se debe a que divide la lista en dos partes y realiza la operación de ordenamiento en cada una de ellas de manera recursiva. Sin embargo, se vuelve de menor complejidad al ser distribuido al ser afectado por una cantidad k de servidores, la complejidad quedaría determinada como: O(n/k  log⁡〖n/k〗).
 
 ## Pruebas
-Para probarlo, se utilizó una lista de 1000 números sin orden y de manera randómica, en el que se pudo comprobar la correctitud de la ejecución del programa para ordenarlos, para ello se demoró 70 milisegundos en realizarlo. De todas maneras, para probar el funcionamiento del mismo, se utilizaron diferentes tamaños de listas con diferentes tipos de números. Solo que para una prueba final, se puede probar el caso más prometedor (que es el ya mencionado).
+Para probarlo, se utilizó listas de diferentes tamaños de datos (100, 1000, 10000, 100000, 1000000). En los que se evidenció, en general, que para datos más grandes, el tiempo de ejecución mejora con el aumento de subservidores.
 
 ## Conclusión
 La implementación del algoritmo QuickSort en un entorno distribuido con llamadas asíncronas ha demostrado ser eficiente y efectiva. La estrategia de dividir y vencer, junto con la distribución de tareas entre varios servidores, permite un procesamiento más rápido y eficiente de los datos. Donde su complejidad algorítmica promedio se mantiene, la distribución de la carga de trabajo entre varios servidores puede reducir efectivamente el tiempo de ejecución. Sin embargo, es importante tener en cuenta que la sobrecarga de comunicación entre el servidor y los sub-servidores puede afectar el rendimiento general.
 
+A continuación el informe. [Informe - Sort Distribuido.pdf]
+
+En donde se hablará todo esto esto de manera más detallada.
 ## Cómo empezar
 
 Para ejecutar el proyecto, debes seguir los siguientes pasos:
@@ -29,27 +32,27 @@ Para ejecutar el proyecto, debes seguir los siguientes pasos:
 2. Abre la terminal en la carpeta del proyecto.
 3. Inicia el servidor principal ejecutando el siguiente comando:
 
-   ```bash
+   bash
    $ slice2java QuickSort.ice
-   ```
-   ```bash
-   $ .\gradlew build
-   ```
 
-   ```bash
-   $ java -jar .\MotherServer\build\libs\MotherServer.jar
-   ```
+   bash
+   $ .\gradlew build
+
+
+bash
+$ java -jar .\MotherServer\build\libs\MotherServer.jar
+
 4. En una nueva terminal, inicia el servidor trabajador ejecutando el siguiente comando:
 
-   ```bash
+   bash
    $ java -jar .\SubServer\build\libs\SubServer.jar
    // puedes ejecutar tantos trabajadores como quieras
-   ```
+
 5. En una nueva terminal, inicia el cliente ejecutando el siguiente comando:
 
-   ```bash
-   $ java -jar .\client\build\libs\client.jar 
-   ```
+   bash
+   $ java -jar .\client\build\libs\client.jar
+
 6. Sigue las instrucciones en la consola del cliente.
 
 ## Contribuidores
