@@ -21,9 +21,7 @@ Para probarlo, se utilizó listas de diferentes tamaños de datos (100, 1000, 10
 ## Conclusión
 La implementación del algoritmo QuickSort en un entorno distribuido con llamadas asíncronas ha demostrado ser eficiente y efectiva. La estrategia de dividir y vencer, junto con la distribución de tareas entre varios servidores, permite un procesamiento más rápido y eficiente de los datos. Donde su complejidad algorítmica promedio se mantiene, la distribución de la carga de trabajo entre varios servidores puede reducir efectivamente el tiempo de ejecución. Sin embargo, es importante tener en cuenta que la sobrecarga de comunicación entre el servidor y los sub-servidores puede afectar el rendimiento general.
 
-A continuación el informe. [Informe - Sort Distribuido.pdf]
-
-En donde se hablará todo esto esto de manera más detallada.
+A continuación se proporciona el nombre con el cual podra encontrar el informe en el apartado de documentación. [Informe - Sort Distribuido.pdf] En donde se hablará todo esto esto de manera más detallada.
 ## Cómo empezar
 
 Para ejecutar el proyecto, debes seguir los siguientes pasos:
